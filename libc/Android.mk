@@ -366,7 +366,7 @@ libc_common_src_files += \
 ifeq ($(ARCH_ARM_HAVE_ARMV7A),true)
 libc_common_src_files += arch-arm/bionic/strlen-armv7.S
 else
-libc_common_src_files += arch-arm/bionic/strlen.c.arm
+libc_common_src_files += arch-arm/bionic/strlen-armv6.S
 endif
 
 # Check if we want a neonized version of memmove instead of the
